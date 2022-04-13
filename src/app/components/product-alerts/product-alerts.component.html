@@ -1,0 +1,13 @@
+<p>product-alerts works!</p>
+<button (click)="onRender()">Render</button>
+<div *ngIf="selected">
+  <input type="text" [(ngModel)]="selected.name" />
+</div>
+<ul *ngIf="render">
+  <li *ngFor="let product of products">
+    <button (click)="onSelected(product)">
+      <span class="fs-1 fw-bold text-primary">{{ product.id }}</span>
+      <span class="name">{{ product.name }}</span>
+    </button>
+  </li>
+</ul>
