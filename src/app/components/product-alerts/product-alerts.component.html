@@ -5,7 +5,7 @@
 </div>
 <ul *ngIf="render">
   <li *ngFor="let product of products">
-    <button (click)="onSelected(product)">
+    <button (click)="onSelected(product)" class="btn btn-primary">
       <span class="fs-1 fw-bold text-primary">{{ product.id }}</span>
       <span class="name">{{ product.name }}</span>
     </button>

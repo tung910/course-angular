@@ -11,8 +11,8 @@ export class ProductAlertsComponent implements OnInit {
 	render: boolean = false
 	products = PRODUCTS
 	selected: any
-
-	constructor() { }
+	constructor() {
+	}
 
 	ngOnInit(): void {
 		// Render 1 lần khi được móc
@@ -22,7 +22,6 @@ export class ProductAlertsComponent implements OnInit {
 	}
 	onSelected(event: any): void {
 		this.selected = event
-
 	}
 
 }
